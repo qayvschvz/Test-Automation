@@ -1,0 +1,6 @@
+# Ignore Cucumber/Gherkin test files from spell checking
+**/Cucumber Tests/**
+**/Playwright Tests/**
+**/node_modules/**
+**/.git/**
+test-results/

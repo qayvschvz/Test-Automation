@@ -1,0 +1,20 @@
+{
+  "cSpell.ignorePaths": [
+    "**/Cucumber Tests/**",
+    "**/Playwright Tests/**",
+    "**/node_modules/**",
+    "**/.git/**"
+  ],
+  "[gherkin]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete",
+    "editor.formatOnSave": false
+  },
+  "cucumberautocomplete.steps": [
+    "Cucumber Tests/step-definitions/**/*.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "Cucumber Tests/**/*.feature",
+  "cucumberautocomplete.strictGherkinValidation": false,
+  "files.exclude": {
+    "**/.DS_Store": true
+  }
+}
