@@ -1,0 +1,19 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const main = document.querySelector("main");
+    const url = new URL(window.location.href);
+    const urlParams = new URLSearchParams(url.search);
+
+    if(urlParams.has("headless")) {
+        main.style.maxHeight = '100vh';
+
+        document.querySelector(".header-wrapper").style.display = "none";
+        document.querySelector(".footer-content").style.display = "none";
+
+        document.querySelectorAll(".buttonsBanner").forEach(i => {i.style.display = "none"});
+        document.querySelectorAll("a:not(.no-headless)").forEach(a => {a.style.display = "none"});
+        document.querySelectorAll("button:not(.no-headless)").forEach(a => {a.style.display = "none"});
+
+        document.querySelectorAll(".breadcrumb-wrapper").forEach(i => {i.style.display = "none"});
+        document.querySelectorAll(".car-configurator_button_wrapper").forEach(i => {i.style.display = "none"});
+    }
+});

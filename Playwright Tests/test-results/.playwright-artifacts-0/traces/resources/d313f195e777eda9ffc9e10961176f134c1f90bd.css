@@ -1,0 +1,235 @@
+/* CAJAS DE TIENDA ONLINE */
+.shop-boxes {
+    position: relative;
+}
+
+.shop-boxes-btn {
+    background: var(--gray-dark-10);
+    color: var(--brand-white);
+    border-radius: 4px;
+    width: 291px;
+    height: 60px;
+}
+
+.shop-boxes .bannerButton a:nth-child(1) {
+    background-color: transparent;
+    color: var(--brand-white);
+    border: 2px solid var(--brand-white);
+    font-family: var(--font-family-2);
+    font-weight: var(--weight-normal);
+    font-size: var(--text-sl);
+    text-transform: none;
+    padding: 8px 28px;
+    transition: .3s;
+}
+
+    .shop-boxes .bannerButton a:nth-child(1):hover {
+        background-color: var(--gray-dark);
+        color: var(--brand-white);
+        border: none;
+    }
+
+.shop-boxes .bannerButton a:nth-child(2) {
+    background-color: var(--brand-white);
+    color: var(--gray-dark);
+    border: 2px solid var(--brand-white);
+    font-family: var(--font-family-2);
+    font-weight: var(--weight-normal);
+    font-size: var(--text-sl);
+    text-transform: none;
+    padding: 8px 28px;
+    transition: .3s;
+}
+
+    .shop-boxes .bannerButton a:nth-child(2):hover {
+        background-color: var(--brand);
+        color: var(--brand-white);
+        border: 2px solid var(--brand);
+    }
+
+
+.shop-boxes-bg {
+    width: 100%;
+    /* background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0) 35.71%), var(--bg-shop); */
+    background: var(--bg-shop);
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-height: 720px;
+    /* background-attachment: fixed; */
+}
+
+.shop-boxes .bannerButton {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    gap: 60px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:768px) {
+    .shop-boxes-bg {
+        width: 100%;
+        background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0) 15.71%), var(--bg-shop);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        min-height: 22rem;
+    }
+
+    .shop-text > a {
+        position: relative;
+        top: -5rem;
+    }
+
+    .container-btn-tienda {
+        margin-bottom: 3rem;
+    }
+
+    .shop-text > h2 {
+        font-size: 2.125rem !important;
+        line-height: 2.5rem !important;
+    }
+
+    .shop-text > div > p {
+        margin-top: -0.5rem !important;
+    }
+
+    .shop-text .container-btn-tienda h3 {
+        font-family: var(--font-family-3);
+    }
+
+    .shop-text .container-btn-tienda p {
+        font-family: var(--font-family-2);
+    }
+
+    .shop-boxes-btn {
+        width: 328px;
+        height: 48px;
+    }
+
+    .shop-boxes .bannerButton {
+        display: grid;
+        gap: 20px;
+        bottom: 5%;
+    }
+
+    .shop-boxes .bannerButton a:nth-child(1) {
+        font-size: var(--text-md);
+    }
+
+        .shop-boxes .bannerButton a:nth-child(2) {
+            font-size: var(--text-md);
+        }
+}
+
+@media (max-width:500px) {
+    .shop-text > a {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.shop-text {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: var(--brand-white);
+    /*background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0) 96.71%);*/
+}
+
+.shop-text > h2 {
+    color: var(--brand-white);
+    font-size: clamp(var(--text-lg), 4vw, var(--text-6xl));
+    font-family: var(--font-family-3);
+    font-style: normal;
+    font-weight: var(--weight-extra-bold);
+    line-height: 3.625rem;
+    text-transform: uppercase;
+}
+
+    .shop-text > div > p {
+        color: var(--brand-white);
+        font-family: var(--font-family-2);
+        font-size: clamp(var(--text-sm), 2.8vw, var(--text-lg));
+        font-size: var(--text-lg);
+        font-style: normal;
+        font-weight: var(--weight-normal);
+        line-height: 1.44444rem;
+        letter-spacing: 0.04rem;
+        width: 90%;
+        max-width: 70rem;
+        margin: auto;
+        padding: 1rem 0;
+    }
+    .shop-text > div > p:empty {
+        display: none;
+    }
+
+/* .shop-text>a {
+    text-decoration: none;
+    border: 2px solid var(--gray-dark-2);
+    padding: var(--p-2) 2rem;
+    color: var(--gray-dark-10);
+    font-family: var(--font-family-1);
+    font-size: 0.88889rem;
+    font-style: normal;
+    font-weight: var(--weight-bold);
+    line-height: 1.22222rem;
+    text-transform: uppercase;
+    background-color: var(--brand-white);
+} */
+
+/* .shop-text>a:hover {
+    color: var(--brand-white);
+    background: #0000004f;
+}
+
+.shop-text>a:active {
+    background-color: var(--gray-dark-4);
+} */
+
+@media (max-width:768px) {
+    .shop-text {
+        position: absolute;
+    }
+
+    .shop-boxes {
+        position: relative;
+    }
+
+    .shop-text > h4 {
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+    }
+
+    .shop-boxes > img {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .shop-boxes > img {
+        margin-top: 1rem;
+        min-height: 276px;
+        object-fit: cover;
+    }
+
+    .shop-text {
+        padding: var(--p-4);
+    }
+
+    .container-btn-tienda {
+        /* padding-bottom: 4rem; */
+    }
+
+    .shop-text > div > p {
+        font-size: 14px;
+        padding: 0;
+    }
+}

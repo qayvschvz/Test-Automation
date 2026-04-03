@@ -1,0 +1,322 @@
+/* 
+  ##Device = All
+  ##Screen = Styles will be apply for all resolutions
+*/
+
+/* CSS */
+.section_name.mobile{
+    display: none;
+}
+.carousel-gallery-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container_btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    pointer-events: none;
+}
+.gallery-vehicle-swiper .container_btns > div {
+    position: initial;
+    width: 48px;
+    height: 92px;
+    background: #00000066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: initial;
+}
+
+.swiper-gallery-pagination {
+    padding: .75rem 0rem 0rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--gray-dark-3) !important;
+}
+
+    .swiper-gallery-pagination .swiper-pagination-bullet {
+        height: fit-content !important;
+        font-size: 1.125rem !important;
+        color: var(--gray-dark-3);
+        padding-bottom: 0.5rem !important;
+        font-family: var(--font-family-2) !important;
+        font-weight: var(--weight-normal) !important;
+        border-bottom: 5px solid transparent !important;
+    }
+
+.swiper-gallery-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-bottom: 5px solid var(--brand-light) !important;
+    color: var(--gray-dark-11);
+}
+
+.gallery-text {
+    padding: 1rem 0rem;
+}
+
+.gallery-text p {
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray-dark-11);
+    height: 4rem;
+}
+.section_name {
+    margin-bottom: 40px;
+    margin-top: 12px;
+    font-family: var(--font-family-3);
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: .2px;
+    text-align: center;
+    color: #000;
+}
+.vehicle-gallery-component {
+    margin: 0 auto;
+    max-width: 960px;
+}
+/* 
+  ##Device = Desktops large
+  ##Screen = 1920px to higher resolution desktops
+*/
+@media (min-width: 1920px) {
+    /* CSS */
+    .carousel-gallery-img {
+        height: 40.8rem;
+    }
+
+    .gallery-text-mobile {
+        display: none;
+    }
+
+    .gallery-text-desktop {
+        display: block;
+    }
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to 1919px
+*/
+
+@media (min-width: 1281px) and (max-width: 1919px) {
+
+    /* CSS */
+    .carousel-gallery-img {
+        height: 40.8rem;
+    }
+
+    .gallery-text-mobile {
+        display: none;
+    }
+
+    .gallery-text-desktop {
+        display: block;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+    .carousel-gallery-img {
+        height: 34.8rem;
+    }
+
+    .gallery-text-mobile {
+        display: none;
+    }
+
+    .gallery-text-desktop {
+        display: block;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media only screen and (max-width: 768px) {
+
+    .gallery-text p {
+        height: auto;
+    }
+
+    .vehicle-gallery-component .swiper-gallery-pagination {
+        justify-content: center !important;
+        align-items: normal !important;
+        gap: 0.5rem;
+    }
+
+    .vehicle-gallery-component .vehicle-gallery-component .swiper-gallery-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        padding: 0.13rem !important;
+    }
+
+    .vehicle-gallery-component .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+        height: 6px !important;
+    }
+
+    .vehicle-gallery-component .swiper-gallery-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        border-bottom: 1px solid var(--brand-light) !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .carousel-gallery-img {
+        height: 23.8rem;
+    }
+
+    .vehicle-gallery-component {
+        padding: 1.5rem 5rem;
+    }
+
+    .gallery-text-mobile {
+        display: none;
+    }
+
+    .gallery-text-desktop {
+        display: block;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    .carousel-gallery-img {
+        height: 23.8rem;
+    }
+
+    .vehicle-gallery-component {
+        padding: 1.5rem 5rem;
+    }
+
+    .gallery-text-mobile {
+        display: none;
+    }
+
+    .gallery-text-desktop {
+        display: block;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    .carousel-gallery-img {
+        height: 16.25rem;
+    }
+    .section_name.desktop{
+        display: none;
+    }
+    .section_name.mobile{
+        display: block;
+        margin-block: 1.5rem 0;
+    }.container_btns {
+        display: none;
+    }
+    .gallery-text-mobile {
+        display: block;
+    }
+    .gallery-text p {
+        text-align: center;
+    }
+    .gallery-text-desktop {
+        display: none;
+    }
+
+    .swiper-gallery-pagination {
+        padding: 2rem 0rem;
+        text-align: center;
+        display: flex !important;
+        border-bottom: none !important;
+    }
+
+    .swiper-gallery-pagination .swiper-pagination-bullet {
+        width: 53.25px !important;
+        height: 5px !important;
+        background: var(--gray-dark-3) !important;
+    }
+
+    .swiper-gallery-pagination .swiper-pagination-bullet-active {
+        border-bottom: none !important;
+        background: var(--brand-light) !important;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .section_name.desktop{
+        display: none;
+    }
+    .section_name.mobile{
+        display: block;
+        margin-block: 1.5rem 0;
+    }
+    .gallery-text p {
+        text-align: center;
+    }
+    .container_btns {
+        display: none;
+    }
+    /* CSS */
+    .carousel-gallery-img {
+        height: 16.25rem;
+    }
+
+    .gallery-text-mobile {
+        display: block;
+    }
+
+    .gallery-text-desktop {
+        display: none;
+    }
+
+    .swiper-gallery-pagination {
+        padding: 2rem 0rem;
+        text-align: center;
+        display: flex !important;
+        border-bottom: none !important;
+    }
+    .swiper-gallery-pagination .swiper-pagination-bullet {
+        width: 53.25px !important;
+        height: 5px !important;
+        background: var(--gray-dark-3) !important;
+        padding-bottom: 1px !important;
+    }
+
+    .swiper-gallery-pagination .swiper-pagination-bullet-active {
+        border-bottom: none !important;
+        background: var(--brand-light) !important;
+        height: 7px !important;
+    }
+}
+

@@ -1,0 +1,57 @@
+
+        const acordeon = document.getElementsByClassName('contenedorF');
+
+        for (i=0; i<acordeon.length; i++) {
+          acordeon[i].addEventListener('click', function () {
+            this.classList.toggle('activa')
+          })
+}
+
+const showCookies = function () {
+    document.querySelectorAll('[data-action="showCookiesForm"]').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            //console.log("Se hizo clic en el elemento con data-action='showCookiesForm'");
+            event.preventDefault(); // Evita el comportamiento del enlace
+            UC_UI.showSecondLayer(); // Llama a la función
+        });
+    });
+};
+showCookies();
+
+
+const body = document.body;
+const panel = document.getElementById('langPanel');
+const overlay = document.getElementById('langPanelOverlay');
+const toggleBtns = [
+    ...document.querySelectorAll('.language-panel-toggle'),
+    ...document.querySelectorAll('.lang-inline-trigger')
+];
+const closeBtn = panel.querySelector('.language-panel__close');
+const backBtn = panel.querySelector('.arrow-left');
+
+function openPanel() {
+    panel.style.display = 'block';
+    overlay.style.display = 'block';
+    panel.setAttribute('aria-hidden', 'false');
+    body.classList.add('is-lang-panel-open');
+    toggleBtns.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
+}
+
+function closePanel() {
+    body.classList.remove('is-lang-panel-open');
+    panel.setAttribute('aria-hidden', 'true');
+    panel.style.display = 'none';
+    overlay.style.display = 'none';
+    toggleBtns.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+}
+
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePanel();
+});
+
+toggleBtns.forEach(btn => btn.addEventListener('click', openPanel));
+closeBtn.addEventListener('click', closePanel);
+backBtn.addEventListener('click', closePanel);
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.style.display !== 'none') closePanel();
+});

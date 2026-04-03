@@ -1,0 +1,241 @@
+section.showcase_xpeng_section {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-block: 3.5%;
+    padding-inline: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+}
+.showcase_xpeng_section nav.showcase_xpeng_section_nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.showcase_xpeng_section nav.showcase_xpeng_section_nav .swiper-pagination-bullet {
+    background: initial;
+    border: none;
+    width: initial;
+    margin: 0;
+    min-width: 168px;
+    height: 41px;
+    font-size: var(--text-lg);
+    line-height: 22px;
+    text-align: center;
+    font-family: var(--font-family-2);
+    color: #A4A4A5;
+    padding: 10px 12px;
+}
+.showcase_xpeng_section nav.showcase_xpeng_section_nav .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    color: #000;
+}
+.container_swiper_showcase_xpeng {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.container_swiper_showcase_xpeng:has(.swiper-button-lock) {
+    justify-content: center;
+}
+.swiper-showcase-xpeng-home {
+    overflow: hidden;
+    width: 83%;
+}
+.showcase_xpeng_section .container_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.showcase_xpeng_section .car-container {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+}
+
+.showcase_xpeng_section .car-info {
+    position: relative;
+    margin: 0 auto;
+    width: 78.5%;
+}
+
+.showcase_xpeng_section .car-name {
+    font-size: 12.5rem;
+    line-height: 214px;
+    /* line-height: 135px; */
+    font-weight: var(--weight-extra-bold);
+    font-style: italic;
+    color: #E1E2E1;
+    font-family: var(--font-family-1);
+    position: absolute;
+    left: 2.5%;
+    min-width: 55%;
+    /* width: 100%; */
+    text-wrap-mode: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.showcase_xpeng_section .car-image {
+    width: 100%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1052 / 493;
+    object-fit: contain;
+    max-width: 1052px;
+}
+
+/* Descripción del coche */
+.showcase_xpeng_section .description {
+    margin: 1.5rem 0;
+    font-size: var(--text-sl);
+    font-family: var(--font-family-2);
+    font-weight: var(--weight-normal);
+    line-height: 23.58px;
+    color: var(--gray-dark);
+}
+
+/* Botones */
+.showcase_xpeng_section .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.showcase_xpeng_section .quote-btn, .showcase_xpeng_section .configure-btn, .showcase_xpeng_section .configure-btn-primary {
+    padding: 8px 32px;
+    font-family: var(--font-family-2);
+    font-size: 1.25rem;
+    border: 1px solid #000;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 190px;
+    height: 48px;
+}
+
+.showcase_xpeng_section .quote-btn {
+    background-color: black;
+    color: white;
+}
+.showcase_xpeng_section .configure-btn-primary {
+    background-color: var(--gray-dark);
+    color: var(--brand-white);
+}
+
+.showcase_xpeng_section .configure-btn {
+    background-color: white;
+    color: black;
+}
+
+.showcase_xpeng_section .quote-btn:hover {
+    background: #BCD75A;
+    border: none;
+    color: #fff;
+}
+
+.showcase_xpeng_section .configure-btn-primary:hover {
+    background-color: var(--brand);
+    border: 1px solid var(--brand);
+    color: var(--brand-white);
+}
+
+.showcase_xpeng_section .configure-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.showcase_xpeng_section .swiper-button-disabled>svg>path {
+    fill: #e5f0db;
+}
+@media (max-width: 1500px) {
+    section.showcase_xpeng_section {
+        padding: 5% 5.5%;
+    }
+    .showcase_xpeng_section .car-info {
+        width: 75%;
+    }
+    .showcase_xpeng_section .car-name {
+        min-width: 52%;
+    }
+    .showcase_xpeng_section .car-image {
+        aspect-ratio: 712/409;
+        margin-top: 8.5%;
+    }
+}
+@media (max-width: 768px) {
+    section.showcase_xpeng_section {
+        padding: 6.5% 2.8% 4.5%;
+    }
+    .showcase_xpeng_section .swiper-showcase-xpeng-home {
+        width: 100%;
+    }
+    .showcase_xpeng_section .car-info {
+        width: 100%;
+    }
+    .showcase_xpeng_section .car-name {
+        min-width: 40.5%;
+        font-size: 11.875rem;
+        line-height: 192px;
+        left: 14%;
+    }
+    .showcase_xpeng_section .car-image {
+        aspect-ratio: 685/340;
+        margin-top: 10%;
+    }
+    .showcase_xpeng_section .description {
+        margin-block: 2.5rem 1rem;
+    }
+    .showcase_xpeng_section .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .showcase_xpeng_section .quote-btn, .configure-btn {
+        min-width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    section.showcase_xpeng_section {
+        padding: 3rem 0 20%;
+    }
+    .showcase_xpeng_section nav.showcase_xpeng_section_nav .swiper-pagination-bullet {
+        min-width: initial;
+        font-size: 0.875rem;
+        padding-inline: 1.25rem;
+    }
+    .showcase_xpeng_section .showcase_xpeng_arrow_prev, .showcase_xpeng_section .showcase_xpeng_arrow_next {
+        display: none;
+    }
+    .showcase_xpeng_section .car-info {
+        width: 91.5%;
+    }
+    .showcase_xpeng_section .car-name {
+        font-size: 7.5rem;
+        line-height: 175px;
+        left: 22%;
+        min-width: 43%;
+    }
+    .showcase_xpeng_section .car-image {
+        margin-top: 12.5%;
+        aspect-ratio: 330 /270;
+    }
+    .showcase_xpeng_section .description {
+        font-size: 1.25rem;
+        padding-inline: 1.5rem;
+    }
+    .showcase_xpeng_section .buttons {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .showcase_xpeng_section .quote-btn, .showcase_xpeng_section .configure-btn, .showcase_xpeng_section .configure-btn-primary {
+        min-width: 282px;
+    }
+}

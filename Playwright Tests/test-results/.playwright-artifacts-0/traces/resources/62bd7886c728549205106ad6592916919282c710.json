@@ -1,0 +1,1 @@
+{"operationName":"getTranslationsByFamily","variables":{"family":"trans__configurator"},"query":"query getTranslationsByFamily($family: String!) {\n  translationsByFamily(family: $family) {\n    code\n    value\n    __typename\n  }\n}"}

@@ -1,0 +1,29 @@
+/*Hide sidemenu in mobile*/
+
+if (screen.width <= 768) {
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function () {
+        var sideMenu = document.querySelector(".menu-side");
+        var currentScrollPos = window.scrollY;
+        if (sideMenu) {
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector(".menu-side").style.bottom = "0";
+            } else {
+                document.querySelector(".menu-side").style.bottom = "0";
+            }
+        }
+        prevScrollpos = currentScrollPos;
+    }
+}
+
+document.querySelectorAll('.menu-container li').forEach((currentElement) => {
+    currentElement.addEventListener('click', (event, element) => {
+        var list_side = document.querySelectorAll('.menu-container li')
+        for (i = 0; i < list_side.length; i++) {
+
+            list_side[i].querySelector('a > span').style.cssText = 'font-weight: 400;';
+        }
+        let element2 = event.currentTarget.querySelector('a > span');
+        element2.style.cssText = 'font-weight: var(--weight-bold);';
+    })
+})

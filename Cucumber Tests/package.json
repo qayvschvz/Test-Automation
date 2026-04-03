@@ -1,0 +1,19 @@
+{
+  "name": "xpeng-cucumber-tests",
+  "version": "1.0.0",
+  "description": "XPeng Configurator - Cucumber/Gherkin BDD Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js . --require step-definitions/steps.js",
+    "test:tags": "cucumber-js . --require step-definitions/steps.js --tags",
+    "test:report": "cucumber-js . --require step-definitions/steps.js --format html:cucumber-report.html"
+  },
+  "keywords": ["cucumber", "gherkin", "bdd", "xpeng"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "@playwright/test": "^1.59.1"
+  }
+}

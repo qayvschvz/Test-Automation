@@ -1,0 +1,85 @@
+.title-services {
+    text-align: center;
+    font-family: var(--font-family-1);
+    font-size: 1.11111rem;
+    font-style: normal;
+    font-weight: var(--weight-normal);
+    line-height: normal;
+    letter-spacing: 0.22222rem;
+    text-transform: uppercase;
+    color: var(--gray-dark-10);
+}
+
+.dealership {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.wrapper-dealership:nth-child(odd) {
+    padding-right: .5rem;
+}
+
+.wrapper-dealership:nth-child(even) {
+    padding-left: .5rem;
+}
+
+
+
+
+.cajaMedia_content-wrapper {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.cajaMedia_content-wrapper>img {
+    width: 100%;
+    /*Validar 99.85%*/
+    aspect-ratio: 2;
+    object-fit: cover;
+    /* filter: brightness(60%); */
+}
+
+.cajaMedia_content-link {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 2rem;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, .8) 59.33%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.cajaMedia_content-link>h2 {
+    color: var(--gray-light-1);
+    text-decoration: none;
+    font-family: var(--font-family-1);
+    font-size: 1.77778rem;
+    font-style: normal;
+    font-weight: var(--weight-bolder);
+    line-height: 2.33333rem;
+}
+
+@media (max-width:767.5px) {
+    .wrapper-dealership:nth-child(odd) {
+        padding-right: 0rem;
+    }
+
+    .wrapper-dealership:nth-child(even) {
+        padding-left: 0rem;
+    }
+
+    .cajaMedia_content-link {
+        padding: var(--p-4) 3rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .cajaMedia_content-link {
+        padding: var(--p-4) var(--p-4);
+    }
+
+}

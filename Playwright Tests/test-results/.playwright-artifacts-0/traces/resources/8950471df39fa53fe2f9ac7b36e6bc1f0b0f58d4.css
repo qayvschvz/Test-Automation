@@ -1,0 +1,119 @@
+.multimedia-content {
+    /*    margin: 4rem 0rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.multimedia-content__wrapper {
+    padding: 0 10rem 2rem;
+}
+
+p.sectionName {
+    font-family: var(--font-family-2);
+    font-weight: var(--weight-normal);
+    font-size: var(--text-sl);
+    line-height: 1.614rem;
+    text-align: center;
+    color: var(--gray-dark-11);
+    font-style: normal;
+    margin: 3.25rem 0 0;
+}
+
+.multimedia-content__video {
+    margin-bottom: 3.125rem;
+}
+
+@media (max-width:992px) {
+    .multimedia-content__wrapper {
+        padding: 0 var(--p-4) 2rem;
+    }
+}
+
+.text-descripcion {
+    padding: 0rem 3.5rem 0rem;
+}
+
+.multimedia-content__video>img,
+.multimedia-content__video>video>source,
+.multimedia-content__video>iframe {
+    width: 950px;
+    height: 480px;
+    object-fit: cover;
+}
+
+@media (max-width:1366px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 854px;
+        height: 440px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 100%;
+        height: 440px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 492px;
+        height: 286px;
+    }
+
+    p.sectionName {
+        font-size: 12px !important;
+    }
+    .multimedia-content__video {
+        margin-bottom: 1.875rem;
+    }
+}
+
+/* p.sectionName {
+    font-size: var(--text-sl);
+} */
+
+@media (max-width:576px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 95%;
+        height: 300px;
+    }
+
+    p.sectionName {
+        margin-top: 3.75rem;
+    }
+}
+
+@media (max-width:360px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 320px;
+        height: 205px;
+    }
+}
+
+@media (max-width:320px) {
+
+    .multimedia-content__video>img,
+    .multimedia-content__video>video>source,
+    .multimedia-content__video>iframe {
+        width: 95%;
+        height: 205px;
+    }
+}

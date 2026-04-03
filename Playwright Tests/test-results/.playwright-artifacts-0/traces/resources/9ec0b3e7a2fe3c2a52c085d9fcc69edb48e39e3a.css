@@ -1,0 +1,60 @@
+.cookies-wrapper {
+    height: auto !important;
+    padding: 1.25rem 1.5rem;
+    gap: 1.25rem;
+    justify-content: space-between;
+}
+
+.cookies-logo-disclaimer {
+    gap: 0.75rem;
+}
+
+.cookies-disclaimer {
+    font-family: var(--font-family-1);
+    font-size: var(--text-md);
+    color: var(--gray-dark-4);
+}
+
+.cookies-buttons {
+    gap: 1.375rem;
+}
+
+.cookies-politics {
+    color: var(--gray-dark-4);
+    font-family: var(--font-family-1);
+    font-size: var(--text-md);
+    padding: var(--p-2) 2rem;
+    /* white-space: nowrap; */
+    font-weight: bold;
+}
+
+.cookies-politics:hover {
+    color: var(--brand-secundary);
+}
+
+.cookies-accept {
+    font-family: var(--font-family-1);
+    font-size: var(--text-md);
+    color: var(--brand-white);
+    background-color: var(--gray-dark-10);
+    padding: var(--p-2) 2rem;
+}
+
+.cookies-accept:hover {
+    background-color: var(--brand-dark);
+}
+
+.cookies-accept:focus {
+    background-color: var(--brand-dark);
+}
+
+@media only screen and (min-width: 768px) {
+    .cookies-logo-disclaimer {
+        gap: 1.375rem;
+    }
+
+    .cookies-buttons {
+        /* min-width: 400px; */
+        max-height: 48px;
+    }
+}

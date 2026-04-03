@@ -1,0 +1,248 @@
+.Swiper-Modelos {
+  max-width: 1920px;
+  margin: 3rem auto;
+  width: 91%;
+}
+
+#other-autos {
+  height: fit-content;
+}
+
+#otrosModelos .text-center {
+  text-align: center;
+}
+
+#otrosModelos .model-car_wrapper {
+  padding: 2rem 1.5rem 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #E1E2E1;
+  border-radius: 8px;
+}
+
+#otrosModelos .otrosModelos_caracteristicas_p {
+  font-family: var(--font-family-2);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--weight-normal);
+  line-height: 24px;
+  color: var(--gray-dark-11);
+  margin-top: 35px;
+}
+#otrosModelos .otrosModelos_caracteristicas_p > :empty {
+  display: none;
+}
+#otrosModelos .otrosModelos_caracteristicas_p ul {
+  padding-inline: 44px 12px;
+  margin: 0;
+}
+#otrosModelos .otrosModelos_caracteristicas_p ul li {
+  list-style-type: initial;
+}
+
+#otrosModelos .nombreSeccionModelo {
+  color: var(--gray-dark-11);
+  font-family: var(--font-family-2);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: var(--weight-normal);
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  padding-inline: 30px;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+#otrosModelos .container_swiper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 41.5px;
+}
+#otrosModelos #imgModel {
+  width: 372px;
+  height: 206px;
+  display: block;
+  margin: 0 auto;
+}
+#otrosModelos .modelCards .swiper-slide {
+  max-width: 450px;
+}
+#otrosModelos .nombreModelo {
+  color: var(--Brand-Primary-Black, #000);
+  text-align: center;
+  font-family: var(--font-family-3);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: var(--weight-bolder);
+  line-height: 26px;
+  padding-bottom: 12px;
+}
+
+#otrosModelos .precioDelModelo {
+  color: var(--gray-dark-11);
+  text-align: center;
+  font-family: var(--font-family-2);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: var(--weight-normal);
+  line-height: 30px;
+  padding-top: 14px;
+    margin: 0;
+}
+
+#otrosModelos .cuotaMensualModelo {
+  color: var(--Brand-Grey-01, #000000);
+  text-align: center;
+  font-family: var(--font-family-3);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: var(--weight-bolder);
+  line-height: 34px;
+  margin: 0;
+}
+#otrosModelos .card-body_btns_wrapper {
+  margin-top: 12px;
+  border-top: 1px solid #A4A4A5;
+}
+
+#otrosModelos .card-body_btn_black, 
+#otrosModelos .card-body_btn_white {
+  transition: all 200ms;
+  margin-top: 20px;
+}
+
+#otrosModelos .card-body_btn_black {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+#otrosModelos .card-body_btn_white {
+  color: #fff;
+  background-color: var(--bs-black);
+}
+
+#otrosModelos .card-body_btn_white:hover {
+  background: var(--brand-light);
+  color: #fff;
+}
+
+#otrosModelos .card-body_btn_black:hover {
+  color: #fff;
+  background: #000;
+}
+
+#otrosModelos #imgModel,
+#otrosModelos #NameModel {
+  margin: 0 auto;
+}
+
+
+#otrosModelos .swiper3 {
+  position: relative;
+  overflow: hidden;
+}
+
+#otrosModelos .modelCards-button-prev, 
+#otrosModelos .modelCards-button-next {
+  position: initial;
+}
+
+#otrosModelos .modelCards-button-prev svg, 
+#otrosModelos .modelCards-button-next svg {
+    width: 46px;
+    fill: #000;
+}
+
+#otrosModelos .modelCards-button-prev {
+    left: 20px;
+}
+
+#otrosModelos .modelCards-button-next {
+    right: 20px;
+}
+#otrosModelos .modelCards-button-next svg {
+  fill: var(--brand-light);
+}
+#otrosModelos .modelCards-button-prev.swiper-button-disabled>svg>path {
+  fill: #e5f0db;
+}
+
+@media(max-width: 1400px) {
+  #otrosModelos #imgModel {
+    width: 18.75rem;
+    height: 10.3125rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #otrosModelos .nombreModelo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #otrosModelos .model-car_wrapper {
+    padding-inline: .75rem;
+  }
+  #otrosModelos .nombreSeccionModelo {
+    font-size: 12px;
+  }
+
+  #otrosModelos .precioDelModelo {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #otrosModelos .cuotaMensualModelo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #otrosModelos .otrosModelos_caracteristicas_p {
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 768px) {
+  #otrosModelos #imgModel {
+    width: 17rem;
+    height: auto;
+  }
+  #otrosModelos .Swiper-Modelos {
+    margin-block: 2rem;
+  }
+  #otrosModelos .nombreSeccionModelo {
+    margin-bottom: 2rem;
+    line-height: 18px;
+  }
+  #otrosModelos .container_swiper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #otrosModelos .modelCards-button-prev svg, #otrosModelos .modelCards-button-next svg {
+    width: 20px;
+  } 
+  #otrosModelos .card-body_btns_wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  #otrosModelos .card-body_btn_black, #otrosModelos .card-body_btn_white {
+    font-size: 20px;
+    width: 100%;
+    max-width: 145px;
+  }
+  #otrosModelos .modelCards {
+    order: -1;
+  }
+}
+@media(max-width: 500px) {
+  #otrosModelos .model-car_wrapper {
+    border: none;
+  }
+}

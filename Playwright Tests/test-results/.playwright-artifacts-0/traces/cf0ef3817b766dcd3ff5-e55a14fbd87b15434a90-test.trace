@@ -1,0 +1,31 @@
+{"version":8,"type":"context-options","origin":"testRunner","browserName":"","playwrightVersion":"1.59.1","options":{},"platform":"win32","wallTime":1775157023626,"monotonicTime":115839.199,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","stepId":"hook@1","startTime":115839.66,"class":"Test","method":"hook","title":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"hook@2","stepId":"hook@2","parentId":"hook@1","startTime":115839.802,"class":"Test","method":"hook","title":"beforeEach hook","params":{},"stack":[{"file":"C:\\Users\\Yves\\Test-Automation\\specs\\configurator-accessibility.spec.ts","line":6,"column":8}]}
+{"type":"before","callId":"fixture@29","stepId":"fixture@29","parentId":"hook@2","startTime":115845.059,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@30","stepId":"pw:api@30","parentId":"fixture@29","startTime":115845.405,"class":"Test","method":"pw:api","title":"Create context","params":{"selectorEngines":"[]","testIdAttributeName":"data-testid","acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","viewport":"Object","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","reducedMotion":"undefined","forcedColors":"undefined","contrast":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@30","endTime":115847.563,"annotations":[]}
+{"type":"after","callId":"fixture@29","endTime":115848.571,"annotations":[]}
+{"type":"before","callId":"fixture@31","stepId":"fixture@31","parentId":"hook@2","startTime":115848.809,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@32","stepId":"pw:api@32","parentId":"fixture@31","startTime":115849.481,"class":"Test","method":"pw:api","title":"Create page","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@32","endTime":115886.637,"annotations":[]}
+{"type":"after","callId":"fixture@31","endTime":115886.741,"annotations":[]}
+{"type":"before","callId":"pw:api@33","stepId":"pw:api@33","parentId":"hook@2","startTime":115887.634,"class":"Test","method":"pw:api","title":"Navigate to \"/pl/configurator/models\"","params":{"url":"https://qa.xpeng.pl/pl/configurator/models","waitUntil":"load","timeout":"0"},"stack":[{"file":"C:\\Users\\Yves\\Test-Automation\\specs\\configurator-accessibility.spec.ts","line":7,"column":16}]}
+{"type":"after","callId":"pw:api@33","endTime":120136.124,"annotations":[]}
+{"type":"before","callId":"pw:api@34","stepId":"pw:api@34","parentId":"hook@2","startTime":120137.373,"class":"Test","method":"pw:api","title":"Is visible locator('text=Zaakceptuj wszystko')","params":{"selector":"text=Zaakceptuj wszystko","strict":"true"},"stack":[{"file":"C:\\Users\\Yves\\Test-Automation\\specs\\configurator-accessibility.spec.ts","line":9,"column":28}],"group":"getter"}
+{"type":"after","callId":"pw:api@34","endTime":120160.134,"annotations":[]}
+{"type":"after","callId":"hook@2","endTime":120160.247,"annotations":[]}
+{"type":"after","callId":"hook@1","endTime":120160.366,"annotations":[]}
+{"type":"before","callId":"pw:api@35","stepId":"pw:api@35","startTime":120161.127,"class":"Test","method":"pw:api","title":"Evaluate","params":{"expression":"() => {\n      const h1s = document.querySelectorAll('h1');\n      const h2s = document.querySelectorAll('h2');\n      const h3s = document.querySelectorAll('h3');\n      return {\n        h1Count: h1s.length,\n        h2Count: h2s.length,\n        h3Count: h3s.length,\n        h1Text: Array.from(h1s).map(h => h.textContent)\n      };\n    }","isFunction":"true","arg":"Object"},"stack":[{"file":"C:\\Users\\Yves\\Test-Automation\\specs\\configurator-accessibility.spec.ts","line":70,"column":33}]}
+{"type":"after","callId":"pw:api@35","endTime":120168.625,"annotations":[]}
+{"type":"before","callId":"expect@36","stepId":"expect@36","startTime":120169.8,"class":"Test","method":"expect","title":"Expect \"toBeGreaterThan\"","params":{},"stack":[{"file":"C:\\Users\\Yves\\Test-Automation\\specs\\configurator-accessibility.spec.ts","line":84,"column":30}]}
+{"type":"after","callId":"expect@36","endTime":120170.259,"annotations":[]}
+{"type":"before","callId":"hook@37","stepId":"hook@37","startTime":120170.44,"class":"Test","method":"hook","title":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@38","stepId":"fixture@38","parentId":"hook@37","startTime":120170.776,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"after","callId":"fixture@38","endTime":120170.835,"annotations":[]}
+{"type":"before","callId":"fixture@39","stepId":"fixture@39","parentId":"hook@37","startTime":120171.057,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@40","stepId":"pw:api@40","parentId":"fixture@39","startTime":120379.45,"class":"Test","method":"pw:api","title":"Close context","params":{"reason":"Test ended."},"stack":[]}
+{"type":"after","callId":"pw:api@40","endTime":120383.758,"annotations":[]}
+{"type":"after","callId":"fixture@39","endTime":120383.862,"annotations":[]}
+{"type":"after","callId":"hook@37","endTime":120388.946,"annotations":[]}
+{"type":"before","callId":"attach@e65eecf45c5373d35f6d53fe815dc339","stepId":"attach@e65eecf45c5373d35f6d53fe815dc339","startTime":120577.059,"class":"Test","method":"test.attach","title":"Attach \"trace\"","params":{},"stack":[]}
+{"type":"after","callId":"attach@e65eecf45c5373d35f6d53fe815dc339","endTime":120577.199,"attachments":[]}

@@ -1,0 +1,121 @@
+.btn-base {
+    font-family: var(--font-family-2);
+    font-style: normal;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-normal);
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    padding: 0 1rem;
+}
+
+.btn-secondary-alternate,
+.btn-primary-alternate,
+.btn-primary,
+.btn-secondary {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    border: 1px solid var(--brand-black);
+    color: var(--gray-dark);
+    background-color: transparent;
+    transition: color 0.5s, border-color 0.3s;
+}
+
+    .btn-primary::before,
+    .btn-primary-alternate::before,
+    .btn-secondary-alternate::before,
+    .btn-secondary::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        background-color: var(--brand-light);
+        z-index: -2;
+        transition: width 0.3s;
+    }
+
+    .btn-primary-alternate:hover,
+    .btn-primary-alternate:focus,
+    .btn-secondary-alternate:hover,
+    .btn-secondary-alternate:focus,
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        color: var(--gray-light-1);
+        border-color: var(--brand-light);
+    }
+
+        .btn-primary-alternate:hover::before,
+        .btn-primary-alternate:focus::before,
+        .btn-secondary-alternate:hover::before,
+        .btn-secondary-alternate:focus::before,
+        .btn-primary:hover::before,
+        .btn-primary:focus::before,
+        .btn-secondary:hover::before,
+        .btn-secondary:focus::before {
+            width: 100%;
+        }
+
+    .btn-primary-alternate:disabled,
+    .btn-secondary-alternate:disabled,
+    .btn-primary:disabled,
+    .btn-secondary:disabled {
+        background: var(--brand-disabled) !important;
+        color: #00000033 !important;
+        border: var(--border-xs) var(--brand-disabled) !important;
+        pointer-events: none;
+    }
+
+.btn-secondary-alternate {
+    border: 1px solid var(--brand-white);
+    color: var(--brand-white);
+}
+
+.btn-primary-alternate {
+    border: 1px solid var(--brand-black);
+    color: var(--gray-dark);
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.btn-primary {
+    border: unset;
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.btn-small {
+    min-height: 2rem;
+    font-size: 0.875rem;
+}
+
+.btn-medium {
+    min-height: 3rem;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.max-w-container {
+    max-width: 86.25rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-spacing {
+    padding: 0 2rem;
+}
+
+@media(max-width:768px) {
+    .section-spacing {
+        padding: 0 1.5rem;
+    }
+}

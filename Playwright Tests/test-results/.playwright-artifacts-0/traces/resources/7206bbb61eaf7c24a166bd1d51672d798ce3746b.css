@@ -1,0 +1,238 @@
+/*Buttons and links*/
+
+.btn_base,
+.link_base {
+    font-family: var(--font-family-2);
+    font-style: normal;
+    font-size: var(--text-sl);
+    font-weight: var(--weight-normal);
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1.063rem 2rem;
+    flex-wrap: nowrap;
+    border-radius: 0rem;
+    /* height: 60px; */
+}
+
+.btn_medium {
+
+    min-height: 3rem;
+    font-size: var(--text-md);
+
+}
+
+.btn_large {
+    min-height: 3.7rem;
+    font-size: 1.25rem;
+    padding: var(--p-2) 2rem;
+}
+
+.link_medium {
+
+    font-size: var(--text-sm);
+    padding: 0rem var(--p-2);
+    min-height: 2rem;
+    text-decoration: underline;
+
+}
+
+.link_large {
+
+    min-height: 3rem;
+    font-size: var(--text-md);
+    padding: var(--p-2) 2rem;
+
+}
+
+.xpeng-animation-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* background-color: transparent; */
+    transition: color 0.3s ease-in-out;
+}
+
+    .xpeng-animation-button::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: transparent;
+        border-radius: 0rem !important;
+        z-index: -2;
+    }
+
+    /* Efecto de llenado con animaci�n */
+    .xpeng-animation-button::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--brand);
+        transform: translateX(-100%);
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        border-radius: 0rem;
+        z-index: -1;
+    }
+
+    .xpeng-animation-button:hover {
+        color: var(--brand-white); 
+        border: none;
+    }
+
+        .xpeng-animation-button:hover::before {
+            transform: translateX(0);
+        }
+
+
+
+@media (max-width: 768px) {
+
+    .btn_medium,
+    .btn_large {
+        min-height: 3rem;
+    }
+
+    .link_medium,
+    .link_large {
+        font-size: var(--text-sm);
+        min-height: 2rem;
+    }
+}
+
+.btn_primary {
+    border: 0.12rem solid var(--brand-white);
+    color: var(--gray-dark);
+    background-color: var(--brand-white);
+    /* text-transform: uppercase; */
+}
+
+.btn_primary:hover, .btn_primary:focus {
+    color: var(--gray-light-1);
+    background-color: var(--brand-light);
+    border-color: transparent;
+    transition: all 0.5s;
+}
+
+.btn_primary:disabled {
+    background: var(--brand-disabled) !important;
+    color: #00000033 !important;
+    border: var(--border-xs) var(--brand-disabled) !important;
+    pointer-events: none;
+}
+
+.btn_secondary_lead {
+    color: var(--gray-light-1);
+    background-color: transparent;
+    border: 0.12rem solid var(--brand-white);
+    transition: .3s;
+    /* text-transform: uppercase; */
+}
+
+    .btn_secondary_lead:hover {
+        color: var(--brand-white);
+        background-color: var(--gray-dark);
+        border: none;
+    }
+
+.btn_secondary_lead:disabled {
+    background: var(--gray-dark-7);
+    color: var(--gray-dark-7);
+    border: var(--border-xs) var(--brand-light-2);
+    pointer-events: none;
+}
+
+.btn_secondary_normal {
+    color: var(--brand-white);
+    background-color: transparent;
+    border: 0.125rem solid var(--brand-white);
+}
+
+.btn_secondary_normal:hover {
+    color: var(--gray-light-1);
+    background-color: var(--gray-dark);
+    border: none;
+}
+
+.btn_secondary_normal:disabled {
+    background: transparent;
+    color: var(--gray-dark-7);
+    border: var(--border-xs) var(--gray-dark-7);
+    pointer-events: none;
+}
+
+.link_button_primary {
+    color: var(--brand);
+    background-color: transparent;
+    border: none;
+}
+
+.link_button_primary:hover {
+    color: var(--brand);
+    background-color: var(--gray-dark-8);
+    border: none;
+}
+
+.link_button_secondary {
+    color: var(--brand);
+    background-color: transparent;
+    border: none;
+}
+
+.link_button_secondary:hover {
+    color: var(--gray-dark-10);
+    background-color: var(--gray-dark-8);
+    border: none;
+}
+
+/*Buttons modifiers*/
+.w_full {
+    width: 100%;
+}
+
+.mb_1\.25 {
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .mb_1\.25 {
+        margin-bottom: 0rem;
+    }
+}
+
+.mr_0\.5 {
+    margin-right: 0.5rem;
+}
+
+.ml_0\.5 {
+    margin-left: 0.5rem;
+}
+
+.padding_0rem {
+    padding: unset;
+}
+
+.justify_unset {
+    justify-content: unset;
+}
+
+.rotate_180 {
+    transform: rotate(180deg);
+}
+
+.p_0\.5 {
+    padding: .5rem 0 .5rem 0;
+}
+
+/* icons buttons sizes*/
+.btn_base svg,
+.link_base svg,
+.link_base img {
+    height: 1.25rem;
+    width: 1.25rem;
+}

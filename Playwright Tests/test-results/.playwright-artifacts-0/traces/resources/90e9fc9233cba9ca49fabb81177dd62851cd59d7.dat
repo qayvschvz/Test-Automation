@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", function () {
+    //console.log("Script reCAPTCHA genérico cargado");
+    //alert("Script reCAPTCHA activo");
+
+    const forms = document.querySelectorAll("form[data-recaptcha='true']");
+
+    forms.forEach((form) => {
+        const siteKey = form.querySelector(".g-recaptcha")?.getAttribute("sitekey");
+        const submitBtn = form.querySelector("button[type=submit]");
+        const tokenField = form.querySelector("input[name='Captchatoken']");
+
+        if (!siteKey || !submitBtn || !tokenField) {
+            console.warn("Faltan elementos del form", form);
+            return;
+        }
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            submitBtn.disabled = true;
+
+            grecaptcha.ready(function () {
+                grecaptcha.execute(siteKey, { action: "submit" }).then(function (token) {
+                    tokenField.value = token;
+                    form.submit();
+                }).catch(function (err) {
+                    //console.error("Error al generar token reCAPTCHA", err);
+                    submitBtn.disabled = false;
+                });
+            });
+        });
+    });
+});
